@@ -67,10 +67,12 @@ li {
 
 a {
     text-decoration: none;
+    color: #1B2A3F;
 }
 
 a:visited {
     color: #1B2A3F;
+    text-decoration: none;
 }
 
 a:hover {
