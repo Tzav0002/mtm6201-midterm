@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mtm6201-midterm</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- All html files linked to a single CSS file to save time. -->
+</head>
+
+<body>
+    <header>
+        <div class="header-container" role="banner">
+            <h1>Seagoat</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome!</h2>
+
+        <!-- The picture tag is used for all the photos on the website to allow for multiple-sized versions of the image. The width is also set to 100% so the images can take up all the space they can minus the margin on the main tag.-->
+        <picture class="major-image">
+            <source srcset="images/home1big.jpg,
+                            images/home1small.jpg 2x"
+                media="(max-width: 480px)" />
+
+            <img src="images/home1big.jpg" alt="Fashionable man"
+                style="width: 100%;">
+        </picture>
+
+
+        <h2>Featured Products</h2>
+
+        <picture class="major-image">
+            <source srcset="images/home2big.jpg,
+                            images/home2small.jpg 2x"
+                media="(max-width: 480px)" />
+
+            <img src="images/home2big.jpg" alt="Jeans" style="width: 100%;">
+        </picture>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit
+            illo architecto aliquam cumque error, nihil repellendus. Tenetur
+            aliquam cupiditate quis qui voluptate, numquam necessitatibus cumque
+            nesciunt eaque at. Ea. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Amet possimus eveniet voluptas error deserunt
+            illum, ut nostrum, minus esse necessitatibus sequi labore, fugit ex
+            et libero? Quas iste ipsa optio? Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Iusto porro iure dignissimos at
+            reiciendis vitae beatae deleniti, non id voluptatem libero et
+            corrupti quas optio animi voluptas dolor sit modi.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, et
+            voluptates neque tempora corrupti. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Magnam repellat, voluptate beatae eius
+            nulla tenetur itaque animi quasi, excepturi odio autem voluptates
+            reiciendis ut saepe eaque illo vel, fugit assumenda.</p>
+
+
+        <!-- This div contains several smaller divs that represent featured products on the home page. -->
+        <div class="box-container" role="contentinfo" itemscope
+            itemtype="https://schema.org/Product">
+            <div class="box1">
+
+                <picture class="minor-image">
+                    <source srcset="images/home3big.jpg,
+                                    images/home3small.jpg 2x"
+                        media="(max-width: 480px)" />
+
+                    <img src="images/home3big.jpg" alt="Grey dresshirt"
+                        style="width: 100%;">
+                </picture>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box2">
+
+                <picture class="minor-image">
+                    <source srcset="images/home4big.jpg,
+                                    images/home4small.jpg 2x"
+                        media="(max-width: 480px)" />
+
+                    <img src="images/home4big.jpg" alt="Dark grey dresshirt"
+                        style="width: 100%;">
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box3">
+
+                <picture class="minor-image">
+                    <source srcset="images/home5big.jpg,
+                                    images/home5small.jpg 2x"
+                        media="(max-width: 480px)" />
+
+                    <img src="images/home5big.jpg" alt="Dark grey pants"
+                        style="width: 100%;">
+                </picture>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box4">
+
+                <picture class="minor-image">
+                    <source srcset="images/home6big.jpg,
+                                    images/home6small.jpg 2x"
+                        media="(max-width: 480px)" />
+
+                    <img src="images/home6big.jpg"
+                        alt="Dark grey fuzzy dresshirt" style="width: 100%;">
+                </picture>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <button>Explore More Products &#8680;</button>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer1">Lorem ipsum</div>
+            <div class="footer2">Lorem ipsum</div>
+            <div class="footer3"><a href="#top">Back to Top</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>

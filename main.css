@@ -1,0 +1,217 @@
+/* Applied the same font to the entire document through the HTML tag*/
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+}
+
+/* Margin applied to the main tag but not entire document so that the header and footer can span the whole page.*/
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* First animation to allow h1 to flash over 1.5 seconds when hovering over the h1. Animation-iteration-count is set to infinite so that the animation goes forever*/
+@keyframes seagoat {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: coral;
+    }
+}
+
+h1:hover {
+    animation-name: seagoat;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0px;
+    display: flex;
+    border-style: solid;
+    border-color: #1B2A3F;
+    margin-top: -10px;
+}
+
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+    color: #1B2A3F;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1B2A3F;
+}
+
+a:hover {
+    text-decoration: none;
+    color: coral;
+}
+
+.header-container {
+    background-color: #1B2A3F;
+    max-width: 100%;
+    color: white;
+    padding: 0.1rem;
+}
+
+.major-image {
+    max-width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.banner-image {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 0.3;
+}
+
+picture:hover {
+    opacity: 1;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    text-align: center;
+    margin: 5%;
+    transition: 0.3s;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    transform: scale(1.1);
+}
+
+button {
+    display: block;
+    border-style: double;
+    border-color: coral;
+    background-color: white;
+    color: coral;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2rem;
+    animation-name: button;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+
+/* Second animation for the button:hover state to give a "call to action" effect. This is done by making the button scale up and down slowly infinitly.*/
+@keyframes button {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+button:hover {
+    background-color: coral;
+    color: rgb(255, 255, 255);
+}
+
+.footer-container {
+    background-color: #1B2A3F;
+    max-width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+
+.footer1,
+.footer2,
+.footer3 {
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer3 a{
+    color: white;
+    transition: color 0.2s
+}
+
+.footer3 a:hover{
+    color: coral;
+}
+
+/* Media Query for screens larger than mobile size. Mainly for desktop view*/
+@media screen and (min-width:480px) {
+
+    /* box container grid layout changed from 2x2 to 1x4 to better fit the mobile viewport. */
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    li {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .header-container {
+        padding: 1rem;
+    }
+
+    .nav-container {
+        margin-top: -20px;
+        margin-bottom: 100px;
+    }
+}
